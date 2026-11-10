@@ -88,6 +88,17 @@ namespace urhajok
             }
         }
 
+        private void GyartokSzerint(object sender, RoutedEventArgs e)
+        {
+            var csoportok = urhajok.GroupBy(u => u.Gyarto);
+            string eredmeny = "";
+            foreach (var csoport in csoportok)
+            {
+                eredmeny += $"{csoport.Key}: {csoport.Count()} db\n";
+            }
+            MessageBox.Show(eredmeny, "Gyártók szerinti csoportosítás");
+        }
+
     }
 }
 
