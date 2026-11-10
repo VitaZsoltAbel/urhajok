@@ -71,6 +71,14 @@ namespace urhajok
             }
         }
 
+
+        private void SikeresKuldetesek(object sender, RoutedEventArgs e)
+        {
+            var sikeresek = urhajok.Where(u => u.KuldetesStatusz == "Sikeres").ToList();
+            datagrid.ItemsSource = sikeresek;
+            datagrid.Items.Refresh();
+        }
+
     }
 }
 
