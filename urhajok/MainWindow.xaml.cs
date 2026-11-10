@@ -56,6 +56,10 @@ namespace urhajok
             datagrid.Items.Refresh();
         }
 
+        private void HanyUrhajoVan(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"Az űrhajók száma: {urhajok.Count}");
+        }
 
     }
 }

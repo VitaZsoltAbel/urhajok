@@ -15,7 +15,7 @@
 
         <StackPanel Grid.Column="0"  Margin="0,0,0,0">
             <Button Content="Adatok betöltése" Click="AdatokBetoltese" Margin="10,5"/>
-
+            <Button Content="Hány űrhajó van?" Click="HanyUrhajoVan" Margin="10,5"/>
         </StackPanel>
 
 
