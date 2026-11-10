@@ -79,6 +79,15 @@ namespace urhajok
             datagrid.Items.Refresh();
         }
 
+        private void AtlagosLegenyseg(object sender, RoutedEventArgs e)
+        {
+            if (urhajok.Count > 0)
+            {
+                double atlag = urhajok.Average(u => u.Legenyseg);
+                MessageBox.Show($"Az átlagos legénységszám: {atlag:F2}");
+            }
+        }
+
     }
 }
 

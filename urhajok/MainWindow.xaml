@@ -18,6 +18,7 @@
             <Button Content="Hány űrhajó van?" Click="HanyUrhajoVan" Margin="10,5"/>
             <Button Content="Melyiknek a legnagyobb a hatótávja?" Click="LegnagyobbHatotav" Margin="10,5" />
             <Button Content="Kik voltak sikeres küldetésen?" Click="SikeresKuldetesek" Margin="10,5"/>
+            <Button Content="Átlagos legénységszám" Click="AtlagosLegenyseg" Margin="10,5"/>
         </StackPanel>
 
 
