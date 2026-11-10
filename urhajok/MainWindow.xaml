@@ -20,6 +20,8 @@
             <Button Content="Kik voltak sikeres küldetésen?" Click="SikeresKuldetesek" Margin="10,5"/>
             <Button Content="Átlagos legénységszám" Click="AtlagosLegenyseg" Margin="10,5"/>
             <Button Content="Gyártók szerinti csoportosítás" Click="GyartokSzerint" Margin="10,5"/>
+            <TextBox x:Name="txtKereses" Margin="10,10,10,2" Height="25"/>
+            <Button Content="Keresés név alapján" Click="KeresesNevAlapjan" Margin="10,2,10,5"/>
         </StackPanel>
 
 

@@ -99,6 +99,14 @@ namespace urhajok
             MessageBox.Show(eredmeny, "Gyártók szerinti csoportosítás");
         }
 
+        private void KeresesNevAlapjan(object sender, RoutedEventArgs e)
+        {
+            string keresett = txtKereses.Text.ToLower();
+            var talalatok = urhajok.Where(u => u.Nev.ToLower().Contains(keresett)).ToList();
+            datagrid.ItemsSource = talalatok;
+            datagrid.Items.Refresh();
+        }
+
     }
 }
 
